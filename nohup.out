@@ -1,0 +1,485 @@
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "main.py", line 110, in on_message
+    await self.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 486, in close
+    await self.ws.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/gateway.py", line 538, in close
+    await super().close(code, reason)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/websockets/protocol.py", line 419, in close
+    yield from asyncio.shield(self.close_connection_task)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 251, in _run_event
+    await coro(*args, **kwargs)
+  File "main.py", line 198, in on_message
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Unhandled exception during Client.run shutdown.
+task: <Task finished coro=<MyClient.my_background_task() done, defined at main.py:47> exception=RuntimeError('Session is closed')>
+Traceback (most recent call last):
+  File "main.py", line 77, in my_background_task
+    await asyncio.sleep(60) # task runs every 60 seconds
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/asyncio/tasks.py", line 564, in sleep
+    return await future
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 80, in my_background_task
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "main.py", line 110, in on_message
+    await self.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 486, in close
+    await self.ws.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/gateway.py", line 538, in close
+    await super().close(code, reason)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/websockets/protocol.py", line 419, in close
+    yield from asyncio.shield(self.close_connection_task)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 251, in _run_event
+    await coro(*args, **kwargs)
+  File "main.py", line 198, in on_message
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Unhandled exception during Client.run shutdown.
+task: <Task finished coro=<MyClient.my_background_task() done, defined at main.py:47> exception=RuntimeError('Session is closed')>
+Traceback (most recent call last):
+  File "main.py", line 77, in my_background_task
+    await asyncio.sleep(60) # task runs every 60 seconds
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/asyncio/tasks.py", line 564, in sleep
+    return await future
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 80, in my_background_task
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Unhandled exception during Client.run shutdown.
+task: <Task finished coro=<MyClient.my_background_task() done, defined at main.py:47> exception=RuntimeError('Session is closed')>
+Traceback (most recent call last):
+  File "main.py", line 77, in my_background_task
+    await asyncio.sleep(60) # task runs every 60 seconds
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/asyncio/tasks.py", line 564, in sleep
+    return await future
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 80, in my_background_task
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "main.py", line 110, in on_message
+    m = ':wave:'
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 486, in close
+    await self.ws.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/gateway.py", line 538, in close
+    await super().close(code, reason)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/websockets/protocol.py", line 419, in close
+    yield from asyncio.shield(self.close_connection_task)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 251, in _run_event
+    await coro(*args, **kwargs)
+  File "main.py", line 198, in on_message
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Unhandled exception during Client.run shutdown.
+task: <Task finished coro=<MyClient.my_background_task() done, defined at main.py:47> exception=RuntimeError('Session is closed')>
+Traceback (most recent call last):
+  File "main.py", line 77, in my_background_task
+    await self.sendbotchannel(m)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/asyncio/tasks.py", line 564, in sleep
+    return await future
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 80, in my_background_task
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "main.py", line 112, in on_message
+    await self.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 486, in close
+    await self.ws.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/gateway.py", line 538, in close
+    await super().close(code, reason)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/websockets/protocol.py", line 419, in close
+    yield from asyncio.shield(self.close_connection_task)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 251, in _run_event
+    await coro(*args, **kwargs)
+  File "main.py", line 200, in on_message
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Unhandled exception during Client.run shutdown.
+task: <Task finished coro=<MyClient.my_background_task() done, defined at main.py:47> exception=RuntimeError('Session is closed')>
+Traceback (most recent call last):
+  File "main.py", line 79, in my_background_task
+    await asyncio.sleep(60) # task runs every 60 seconds
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/asyncio/tasks.py", line 564, in sleep
+    return await future
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 82, in my_background_task
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "main.py", line 112, in on_message
+    await self.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 486, in close
+    await self.ws.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/gateway.py", line 538, in close
+    await super().close(code, reason)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/websockets/protocol.py", line 419, in close
+    yield from asyncio.shield(self.close_connection_task)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 251, in _run_event
+    await coro(*args, **kwargs)
+  File "main.py", line 200, in on_message
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Unhandled exception during Client.run shutdown.
+task: <Task finished coro=<MyClient.my_background_task() done, defined at main.py:47> exception=RuntimeError('Session is closed')>
+Traceback (most recent call last):
+  File "main.py", line 79, in my_background_task
+    await asyncio.sleep(60) # task runs every 60 seconds
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/asyncio/tasks.py", line 564, in sleep
+    return await future
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 82, in my_background_task
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "main.py", line 110, in on_message
+    await self.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 486, in close
+    await self.ws.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/gateway.py", line 538, in close
+    await super().close(code, reason)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/websockets/protocol.py", line 419, in close
+    yield from asyncio.shield(self.close_connection_task)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 251, in _run_event
+    await coro(*args, **kwargs)
+  File "main.py", line 198, in on_message
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Task exception was never retrieved
+future: <Task finished coro=<MyClient.my_background_task() done, defined at main.py:47> exception=HTTPException('BAD REQUEST (status code: 400): Invalid Form Body\nIn content: Must be 2000 or fewer in length.')>
+Traceback (most recent call last):
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/pandas/core/arrays/datetimes.py", line 1861, in objects_to_datetime64ns
+    values, tz_parsed = conversion.datetime_to_datetime64(data)
+  File "pandas/_libs/tslibs/conversion.pyx", line 200, in pandas._libs.tslibs.conversion.datetime_to_datetime64
+TypeError: Unrecognized value type: <class 'str'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 56, in my_background_task
+    df_videos = search_videos()
+  File "/home/ubuntu/dota2-bot/search_videos.py", line 46, in search_videos
+    # GoFlo GameShows
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/pandas/core/tools/datetimes.py", line 592, in to_datetime
+    values = convert_listlike(arg._values, True, format)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/pandas/core/tools/datetimes.py", line 302, in _convert_listlike_datetimes
+    allow_object=True)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/pandas/core/arrays/datetimes.py", line 1866, in objects_to_datetime64ns
+    raise e
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/pandas/core/arrays/datetimes.py", line 1857, in objects_to_datetime64ns
+    require_iso8601=require_iso8601
+  File "pandas/_libs/tslib.pyx", line 460, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslib.pyx", line 685, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslib.pyx", line 809, in pandas._libs.tslib.array_to_datetime_object
+  File "pandas/_libs/tslib.pyx", line 803, in pandas._libs.tslib.array_to_datetime_object
+  File "pandas/_libs/tslibs/parsing.pyx", line 99, in pandas._libs.tslibs.parsing.parse_datetime_string
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/dateutil/parser/_parser.py", line 1358, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/dateutil/parser/_parser.py", line 649, in parse
+    raise ValueError("Unknown string format:", timestr)
+ValueError: ('Unknown string format:', 'Slark')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 80, in my_background_task
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 222, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: BAD REQUEST (status code: 400): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "main.py", line 110, in on_message
+    await self.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 486, in close
+    await self.ws.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/gateway.py", line 538, in close
+    await super().close(code, reason)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/websockets/protocol.py", line 419, in close
+    yield from asyncio.shield(self.close_connection_task)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 251, in _run_event
+    await coro(*args, **kwargs)
+  File "main.py", line 198, in on_message
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Unhandled exception during Client.run shutdown.
+task: <Task finished coro=<MyClient.my_background_task() done, defined at main.py:47> exception=RuntimeError('Session is closed')>
+Traceback (most recent call last):
+  File "main.py", line 77, in my_background_task
+    await asyncio.sleep(60) # task runs every 60 seconds
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/asyncio/tasks.py", line 564, in sleep
+    return await future
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 80, in my_background_task
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Ignoring exception in on_message
+Traceback (most recent call last):
+  File "main.py", line 110, in on_message
+    await self.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 486, in close
+    await self.ws.close()
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/gateway.py", line 538, in close
+    await super().close(code, reason)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/websockets/protocol.py", line 419, in close
+    yield from asyncio.shield(self.close_connection_task)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/client.py", line 251, in _run_event
+    await coro(*args, **kwargs)
+  File "main.py", line 198, in on_message
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
+Unhandled exception during Client.run shutdown.
+task: <Task finished coro=<MyClient.my_background_task() done, defined at main.py:47> exception=RuntimeError('Session is closed')>
+Traceback (most recent call last):
+  File "main.py", line 77, in my_background_task
+    await asyncio.sleep(60) # task runs every 60 seconds
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/asyncio/tasks.py", line 564, in sleep
+    return await future
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 80, in my_background_task
+    await self.send2developer(traceback.format_exc())
+  File "main.py", line 28, in send2developer
+    await dm.send(msg)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/abc.py", line 823, in send
+    data = await state.http.send_message(channel.id, content, tts=tts, embed=embed, nonce=nonce)
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/discord/http.py", line 158, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 1005, in __aenter__
+    self._resp = await self._coro
+  File "/home/ubuntu/.pyenv/versions/3.7.0/lib/python3.7/site-packages/aiohttp/client.py", line 348, in _request
+    raise RuntimeError('Session is closed')
+RuntimeError: Session is closed
